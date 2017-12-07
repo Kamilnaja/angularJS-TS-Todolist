@@ -1,0 +1,19 @@
+{
+  "name": "ng1withts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc -w src/*.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/angular": "^1.6.39",
+    "angular": "^1.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.56"
+  }
+}
