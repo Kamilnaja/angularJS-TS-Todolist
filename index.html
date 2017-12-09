@@ -7,8 +7,13 @@
     <title>Document</title>
     <script src="node_modules/angular/angular.js"></script>
     <script src="src/index.js"></script>
+    <script src="src/service.js"></script>
 </head>
 <body ng-app="myApp" ng-controller="myCtrl">
-    <div></div>
+    <div>
+        <input type="text" ng-model="taskName">
+        <button ng-click="addNewTask(taskName)">Dodaj zadanie</button>
+        <div ng-repeat="task in taskList">{{task.id}} || {{task.title}} || {{task.isDone}}</div>
+    </div>
 </body>
 </html>

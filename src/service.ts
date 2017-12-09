@@ -1,12 +1,31 @@
-// const TASKS: ITask[] = [
-//     { 
-//         id: 1, 
-//         title: 'Wynieść śmieci', 
-//         isDone: false
-//     },
-//     {
-//         id: 2,
-//         title: 'Drink wine',
-//         isDone: false
-//     }
-// ];
+// import  { taskList } from './taskList';
+const taskList = [
+    {
+        title: "lorem",
+        id: 1,
+        isDone: false
+    }, {
+        title: "ipsum",
+        id: 2,
+        isDone: true
+    }, {
+        title: "dolor",
+        id: 3,
+        isDone: false
+    }
+];
+
+app.service('TaskService', function () {
+    var _task = '';
+
+    this.addNewTask = function (task) {
+        _task = task;
+    }
+
+    this.getTasks = function () {
+        this.allTasks = taskList;
+        return this.allTasks;
+    }
+
+
+})
